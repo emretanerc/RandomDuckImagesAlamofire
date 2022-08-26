@@ -1,0 +1,6 @@
+framework module Pods_randomduckimages {
+  umbrella header "Pods-randomduckimages-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E82631D28B90DD400EE4B38 /* DuckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E82631C28B90DD400EE4B38 /* DuckModel.swift */; };
 		4EE1FF2128AC400F0021B076 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2028AC400F0021B076 /* AppDelegate.swift */; };
 		4EE1FF2328AC400F0021B076 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2228AC400F0021B076 /* SceneDelegate.swift */; };
 		4EE1FF2528AC400F0021B076 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2428AC400F0021B076 /* ViewController.swift */; };
 		4EE1FF2828AC400F0021B076 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2628AC400F0021B076 /* Main.storyboard */; };
 		4EE1FF2A28AC40100021B076 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2928AC40100021B076 /* Assets.xcassets */; };
 		4EE1FF2D28AC40100021B076 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EE1FF2B28AC40100021B076 /* LaunchScreen.storyboard */; };
+		824617F949FF6BBD699C0838 /* Pods_randomduckimages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 131540EA0EDEC03CF346D2D0 /* Pods_randomduckimages.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		131540EA0EDEC03CF346D2D0 /* Pods_randomduckimages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_randomduckimages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E82631C28B90DD400EE4B38 /* DuckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuckModel.swift; sourceTree = "<group>"; };
 		4EE1FF1D28AC400F0021B076 /* randomduckimages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = randomduckimages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EE1FF2028AC400F0021B076 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EE1FF2228AC400F0021B076 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4EE1FF2928AC40100021B076 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EE1FF2C28AC40100021B076 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EE1FF2E28AC40100021B076 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A878DE405C9404E69EB29731 /* Pods-randomduckimages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randomduckimages.release.xcconfig"; path = "Target Support Files/Pods-randomduckimages/Pods-randomduckimages.release.xcconfig"; sourceTree = "<group>"; };
+		AA6A5749FE325D21EC9824E1 /* Pods-randomduckimages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-randomduckimages.debug.xcconfig"; path = "Target Support Files/Pods-randomduckimages/Pods-randomduckimages.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824617F949FF6BBD699C0838 /* Pods_randomduckimages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DF9194E325DB8B4D85C13F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				131540EA0EDEC03CF346D2D0 /* Pods_randomduckimages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3101988ADA2023DFE1A46D6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA6A5749FE325D21EC9824E1 /* Pods-randomduckimages.debug.xcconfig */,
+				A878DE405C9404E69EB29731 /* Pods-randomduckimages.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4EE1FF1428AC400F0021B076 = {
 			isa = PBXGroup;
 			children = (
 				4EE1FF1F28AC400F0021B076 /* randomduckimages */,
 				4EE1FF1E28AC400F0021B076 /* Products */,
+				3101988ADA2023DFE1A46D6A /* Pods */,
+				0DF9194E325DB8B4D85C13F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +89,7 @@
 				4EE1FF2928AC40100021B076 /* Assets.xcassets */,
 				4EE1FF2B28AC40100021B076 /* LaunchScreen.storyboard */,
 				4EE1FF2E28AC40100021B076 /* Info.plist */,
+				4E82631C28B90DD400EE4B38 /* DuckModel.swift */,
 			);
 			path = randomduckimages;
 			sourceTree = "<group>";
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EE1FF3128AC40100021B076 /* Build configuration list for PBXNativeTarget "randomduckimages" */;
 			buildPhases = (
+				AFB476338ECDB458962FDB71 /* [CP] Check Pods Manifest.lock */,
 				4EE1FF1928AC400F0021B076 /* Sources */,
 				4EE1FF1A28AC400F0021B076 /* Frameworks */,
 				4EE1FF1B28AC400F0021B076 /* Resources */,
+				EAB060063F67DD2DC157D15A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AFB476338ECDB458962FDB71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-randomduckimages-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB060063F67DD2DC157D15A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-randomduckimages/Pods-randomduckimages-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-randomduckimages/Pods-randomduckimages-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-randomduckimages/Pods-randomduckimages-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4EE1FF1928AC400F0021B076 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +211,7 @@
 			files = (
 				4EE1FF2528AC400F0021B076 /* ViewController.swift in Sources */,
 				4EE1FF2128AC400F0021B076 /* AppDelegate.swift in Sources */,
+				4E82631D28B90DD400EE4B38 /* DuckModel.swift in Sources */,
 				4EE1FF2328AC400F0021B076 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +354,7 @@
 		};
 		4EE1FF3228AC40100021B076 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6A5749FE325D21EC9824E1 /* Pods-randomduckimages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +383,7 @@
 		};
 		4EE1FF3328AC40100021B076 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A878DE405C9404E69EB29731 /* Pods-randomduckimages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
